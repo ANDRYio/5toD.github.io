@@ -3,39 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juan Pablo Duarte - Padre de la Patria</title>
+<title>Juan Pablo Duarte | Historia Dominicana</title>
 
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom, #f5f7fa, #e4ecf7);
-    color: #222;
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f4efe6;
+    color: #2c2c2c;
 }
 
 header {
-    background: linear-gradient(90deg, #002D62, #CE1126);
-    color: white;
-    text-align: center;
+    background-color: #1b2a41;
+    color: #f4efe6;
     padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #8b1e3f;
 }
 
 header h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 42px;
+    letter-spacing: 2px;
 }
 
 nav {
-    background: #002D62;
+    background-color: #8b1e3f;
+    padding: 15px;
     text-align: center;
-    padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: #f4efe6;
     text-decoration: none;
-    margin: 15px;
+    margin: 0 20px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 nav a:hover {
@@ -43,37 +46,40 @@ nav a:hover {
 }
 
 section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-left: 6px solid #1b2a41;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #002D62;
-    border-bottom: 3px solid #CE1126;
+    color: #1b2a41;
+    border-bottom: 3px solid #8b1e3f;
     padding-bottom: 5px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-top: 20px;
-}
-
 .timeline {
-    border-left: 4px solid #CE1126;
+    border-left: 4px solid #8b1e3f;
     padding-left: 20px;
 }
 
 .timeline div {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.quote {
+    background-color: #f4efe6;
+    padding: 20px;
+    font-style: italic;
+    border-left: 5px solid #8b1e3f;
+    margin-top: 20px;
 }
 
 footer {
-    background: #002D62;
-    color: white;
+    background-color: #1b2a41;
+    color: #f4efe6;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -85,189 +91,52 @@ footer {
 
 <header>
     <h1>Juan Pablo Duarte</h1>
-    <p>Padre de la Patria Dominicana</p>
+    <p>Fundador de la República Dominicana</p>
 </header>
 
 <nav>
     <a href="#biografia">Biografía</a>
-    <a href="#trinitaria">La Trinitaria</a>
+    <a href="#pensamiento">Pensamiento</a>
     <a href="#linea">Línea de Tiempo</a>
-    <a href="#legado">Legado</a>
+    <a href="#legado">Legado Histórico</a>
 </nav>
 
 <section id="biografia">
     <h2>Biografía</h2>
-    <div class="card">
-        <p>Juan Pablo Duarte nació el 26 de enero de 1813 en Santo Domingo. Fue un líder político, militar y pensador que dedicó su vida a la independencia de la República Dominicana.</p>
-        <p>Desde joven mostró interés por la libertad y la justicia. Estudió en el extranjero y al regresar al país comenzó a organizar movimientos revolucionarios.</p>
-    </div>
+    <p>Juan Pablo Duarte nació el 26 de enero de 1813 en Santo Domingo, durante el período de la España Boba. Fue hijo de Juan José Duarte y Manuela Díez. Desde joven mostró inclinación por la educación, la cultura y las ideas de libertad.</p>
+    
+    <p>Viajó a Europa donde conoció los ideales liberales y republicanos que influenciaron profundamente su pensamiento político. A su regreso al país, se dedicó a organizar un movimiento independentista que buscaba liberar al territorio dominicano del dominio haitiano.</p>
 </section>
 
-<section id="trinitaria">
-    <h2>La Trinitaria</h2>
-    <div class="card">
-        <p>El 16 de julio de 1838 fundó la sociedad secreta La Trinitaria junto a otros jóvenes patriotas. Su objetivo era liberar al país del dominio haitiano y establecer una nación libre e independiente.</p>
-        <p>Este grupo trabajó en secreto hasta lograr el movimiento independentista del 27 de febrero de 1844.</p>
+<section id="pensamiento">
+    <h2>Pensamiento Político</h2>
+    <p>Duarte defendía la creación de una república libre, soberana e independiente de toda potencia extranjera. Creía en un gobierno democrático basado en leyes justas y en la participación del pueblo.</p>
+    
+    <div class="quote">
+        "Vivir sin patria es lo mismo que vivir sin honor."
     </div>
 </section>
 
 <section id="linea">
     <h2>Línea de Tiempo</h2>
-    <div class="card timeline">
+    <div class="timeline">
         <div><strong>1813:</strong> Nace en Santo Domingo.</div>
-        <div><strong>1838:</strong> Funda La Trinitaria.</div>
+        <div><strong>1838:</strong> Funda la sociedad secreta La Trinitaria.</div>
         <div><strong>1844:</strong> Se proclama la Independencia Nacional.</div>
+        <div><strong>1864:</strong> Regresa al país durante la Guerra de la Restauración.</div>
         <div><strong>1876:</strong> Fallece en Caracas, Venezuela.</div>
     </div>
 </section>
 
 <section id="legado">
-    <h2>Legado</h2>
-    <div class="card">
-        <p>Duarte es considerado uno de los Padres de la Patria junto a Francisco del Rosario Sánchez y Ramón Matías Mella.</p>
-        <p>Su pensamiento se basaba en la soberanía nacional, la justicia y la libertad del pueblo dominicano.</p>
-    </div>
+    <h2>Legado Histórico</h2>
+    <p>Juan Pablo Duarte es considerado uno de los Padres de la Patria junto a Francisco del Rosario Sánchez y Ramón Matías Mella. Su legado representa el ideal de una nación soberana y democrática.</p>
+    
+    <p>Actualmente, su figura es símbolo del patriotismo dominicano y su pensamiento continúa siendo parte fundamental de la identidad nacional.</p>
 </section>
 
 <footer>
-    <p>Proyecto Escolar 2026 | Historia Dominicana</p>
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juan Pablo Duarte - Padre de la Patria</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom, #f5f7fa, #e4ecf7);
-    color: #222;
-}
-
-header {
-    background: linear-gradient(90deg, #002D62, #CE1126);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 40px;
-}
-
-nav {
-    background: #002D62;
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-h2 {
-    color: #002D62;
-    border-bottom: 3px solid #CE1126;
-    padding-bottom: 5px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-top: 20px;
-}
-
-.timeline {
-    border-left: 4px solid #CE1126;
-    padding-left: 20px;
-}
-
-.timeline div {
-    margin-bottom: 20px;
-}
-
-footer {
-    background: #002D62;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>Juan Pablo Duarte</h1>
-    <p>Padre de la Patria Dominicana</p>
-</header>
-
-<nav>
-    <a href="#biografia">Biografía</a>
-    <a href="#trinitaria">La Trinitaria</a>
-    <a href="#linea">Línea de Tiempo</a>
-    <a href="#legado">Legado</a>
-</nav>
-
-<section id="biografia">
-    <h2>Biografía</h2>
-    <div class="card">
-        <p>Juan Pablo Duarte nació el 26 de enero de 1813 en Santo Domingo. Fue un líder político, militar y pensador que dedicó su vida a la independencia de la República Dominicana.</p>
-        <p>Desde joven mostró interés por la libertad y la justicia. Estudió en el extranjero y al regresar al país comenzó a organizar movimientos revolucionarios.</p>
-    </div>
-</section>
-
-<section id="trinitaria">
-    <h2>La Trinitaria</h2>
-    <div class="card">
-        <p>El 16 de julio de 1838 fundó la sociedad secreta La Trinitaria junto a otros jóvenes patriotas. Su objetivo era liberar al país del dominio haitiano y establecer una nación libre e independiente.</p>
-        <p>Este grupo trabajó en secreto hasta lograr el movimiento independentista del 27 de febrero de 1844.</p>
-    </div>
-</section>
-
-<section id="linea">
-    <h2>Línea de Tiempo</h2>
-    <div class="card timeline">
-        <div><strong>1813:</strong> Nace en Santo Domingo.</div>
-        <div><strong>1838:</strong> Funda La Trinitaria.</div>
-        <div><strong>1844:</strong> Se proclama la Independencia Nacional.</div>
-        <div><strong>1876:</strong> Fallece en Caracas, Venezuela.</div>
-    </div>
-</section>
-
-<section id="legado">
-    <h2>Legado</h2>
-    <div class="card">
-        <p>Duarte es considerado uno de los Padres de la Patria junto a Francisco del Rosario Sánchez y Ramón Matías Mella.</p>
-        <p>Su pensamiento se basaba en la soberanía nacional, la justicia y la libertad del pueblo dominicano.</p>
-    </div>
-</section>
-
-<footer>
-    <p>Proyecto Escolar 2026 | Historia Dominicana</p>
+    Proyecto Escolar de Historia Dominicana | 2026
 </footer>
 
 </body>
