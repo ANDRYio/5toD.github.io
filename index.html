@@ -26,19 +26,24 @@ header{
     background:var(--azul);
     color:var(--blanco);
     text-align:center;
-    padding:50px 20px;
-    border-bottom:10px solid var(--rojo);
+    padding:40px 20px;
+    border-bottom:8px solid var(--rojo);
 }
 
 header h1{
     margin:0;
-    font-size:42px;
-    letter-spacing:1px;
+    font-size:38px;
 }
 
 header h2{
     margin-top:10px;
     font-weight:normal;
+}
+
+header p{
+    margin-top:15px;
+    font-size:18px;
+    font-weight:bold;
 }
 
 /* NAV */
@@ -51,8 +56,9 @@ nav{
 nav a{
     color:var(--blanco);
     text-decoration:none;
-    margin:0 20px;
+    margin:0 15px;
     font-weight:bold;
+    display:inline-block;
 }
 
 nav a:hover{
@@ -62,11 +68,11 @@ nav a:hover{
 /* SECCIONES */
 section{
     max-width:1100px;
-    margin:60px auto;
-    padding:50px;
+    margin:40px auto;
+    padding:40px;
     background:var(--blanco);
-    border-left:8px solid var(--azul);
-    border-right:8px solid var(--rojo);
+    border-left:6px solid var(--azul);
+    border-right:6px solid var(--rojo);
     box-shadow:0 6px 20px rgba(0,0,0,0.1);
 }
 
@@ -75,21 +81,21 @@ section h3{
     border-bottom:3px solid var(--rojo);
     padding-bottom:10px;
     margin-bottom:30px;
-    font-size:30px;
+    font-size:28px;
+    text-align:center;
 }
 
 /* CONTENIDO FLEX */
 .contenido{
     display:flex;
-    flex-wrap:wrap;
-    gap:40px;
+    gap:30px;
     align-items:flex-start;
 }
 
 .contenido img{
-    width:350px;
+    width:320px;
     height:auto;
-    border:6px solid var(--azul);
+    border:5px solid var(--azul);
 }
 
 .contenido p{
@@ -104,8 +110,55 @@ footer{
     background:var(--azul);
     color:var(--blanco);
     text-align:center;
-    padding:30px;
+    padding:25px;
     margin-top:40px;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE CELULAR */
+/* ========================= */
+@media (max-width: 768px){
+
+    header h1{
+        font-size:24px;
+    }
+
+    header h2{
+        font-size:16px;
+    }
+
+    header p{
+        font-size:15px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    section{
+        padding:25px;
+        margin:25px 10px;
+    }
+
+    .contenido{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contenido img{
+        width:100%;
+        max-width:350px;
+    }
+
+    .contenido p{
+        font-size:16px;
+        text-align:left;
+    }
+
+    section h3{
+        font-size:22px;
+    }
 }
 
 </style>
@@ -116,11 +169,8 @@ footer{
 <header>
     <h1>Juan Pablo Duarte y Díez</h1>
     <h2>Padre de la Patria Dominicana</h2>
-    <p style="margin-top:15px; font-size:18px; font-weight:bold;">
-        Proyecto Académico – 5to D
-    </p>
+    <p>Proyecto Académico – 5to D</p>
 </header>
-
 
 <nav>
     <a href="#biografia">Biografía</a>
@@ -129,94 +179,66 @@ footer{
     <a href="#legado">Legado Histórico</a>
 </nav>
 
-<!-- BIOGRAFÍA -->
 <section id="biografia">
     <h3>Biografía</h3>
     <div class="contenido">
         <img src="imagenes/duarte.jpg" alt="Juan Pablo Duarte">
         <p>
         Juan Pablo Duarte y Díez nació el 26 de enero de 1813 en Santo Domingo,
-        durante el período conocido como la España Boba. Fue hijo de Juan José Duarte,
-        comerciante de origen español, y Manuela Díez Jiménez, mujer de firmes valores
-        morales que influyó profundamente en su formación patriótica.
+        durante el período conocido como la España Boba. Fue hijo de Juan José Duarte
+        y Manuela Díez Jiménez. Desde joven mostró una profunda inclinación hacia
+        la educación, la moral y el pensamiento liberal.
         <br><br>
-        Desde joven mostró un carácter reflexivo y una fuerte inclinación hacia la
-        educación, la ética y el pensamiento liberal. En 1828 viajó a Europa, donde
-        permaneció varios años estudiando y entrando en contacto con las corrientes
-        ideológicas del liberalismo, el nacionalismo y los movimientos revolucionarios
-        que buscaban la autodeterminación de los pueblos.
-        <br><br>
-        Estas experiencias marcaron profundamente su visión política. Duarte regresó
-        a Santo Domingo convencido de que la parte oriental de la isla debía convertirse
-        en una nación libre, independiente y soberana, basada en principios democráticos
-        y republicanos.
+        En 1828 viajó a Europa, donde conoció las corrientes del liberalismo y
+        los movimientos revolucionarios que defendían la autodeterminación de los pueblos.
+        Estas ideas influyeron decisivamente en su pensamiento político y en su visión
+        de una República Dominicana libre, soberana e independiente.
         </p>
     </div>
 </section>
 
-<!-- CONTEXTO HISTÓRICO -->
 <section id="contexto">
     <h3>Contexto Histórico</h3>
     <div class="contenido">
         <img src="imagenes/contexto.jpg" alt="Santo Domingo Colonial">
         <p>
-        En 1822, la parte oriental de la isla quedó bajo ocupación haitiana,
-        situación que se extendió por 22 años. Durante este período se produjeron
-        importantes cambios políticos, económicos y sociales que generaron
-        descontento en diversos sectores de la población dominicana.
+        En 1822, la parte oriental de la isla fue ocupada por Haití durante 22 años.
+        Este período generó cambios políticos y sociales que despertaron en muchos
+        dominicanos el deseo de independencia.
         <br><br>
-        Duarte comprendió que la independencia no podía lograrse únicamente por
-        la vía militar. Era necesario formar conciencia nacional, organizar a la
-        juventud y crear una estructura estratégica que guiara el proceso
-        independentista.
-        <br><br>
-        Así comenzó a gestarse un movimiento patriótico que buscaba la separación
-        definitiva de Haití y la creación de una República Dominicana soberana,
-        libre de toda dominación extranjera.
+        Duarte entendió que la libertad requería organización, educación y
+        conciencia nacional. Por ello comenzó a estructurar un movimiento
+        independentista que culminaría en la proclamación del 27 de febrero de 1844.
         </p>
     </div>
 </section>
 
-<!-- LA TRINITARIA -->
 <section id="trinitaria">
     <h3>Fundación de La Trinitaria</h3>
     <div class="contenido">
         <img src="imagenes/trinitaria.jpg" alt="La Trinitaria">
         <p>
-        El 16 de julio de 1838, Juan Pablo Duarte fundó la sociedad secreta
-        "La Trinitaria", integrada inicialmente por nueve miembros.
-        Esta organización tenía como objetivo principal lograr la independencia
-        nacional mediante un plan estratégico cuidadosamente estructurado.
+        El 16 de julio de 1838 fundó la sociedad secreta La Trinitaria,
+        junto a otros patriotas como Sánchez y Mella. Esta organización
+        trabajó estratégicamente para lograr la independencia nacional.
         <br><br>
-        La Trinitaria funcionaba bajo principios de disciplina, compromiso y
-        discreción. Entre sus miembros destacaron figuras como Francisco del
-        Rosario Sánchez y Ramón Matías Mella, quienes jugarían un papel decisivo
-        en la proclamación de la independencia el 27 de febrero de 1844.
-        <br><br>
-        Duarte no solo fue el ideólogo del movimiento, sino también su principal
-        organizador, impulsando la creación de sociedades culturales como
-        "La Filantrópica" y "La Dramática" para difundir ideas patrióticas.
+        Duarte fue el principal ideólogo del movimiento, promoviendo
+        principios democráticos y republicanos que aún hoy fundamentan
+        el Estado dominicano.
         </p>
     </div>
 </section>
 
-<!-- LEGADO -->
 <section id="legado">
     <h3>Legado Histórico</h3>
     <div class="contenido">
         <img src="imagenes/altar.jpg" alt="Altar de la Patria">
         <p>
-        A pesar de su liderazgo intelectual y moral, Duarte enfrentó el exilio
-        debido a conflictos políticos internos tras la independencia.
-        Sin embargo, su visión republicana y democrática se mantuvo como base
-        fundamental del Estado dominicano.
+        Aunque enfrentó el exilio tras la independencia, su legado permanece
+        como símbolo de patriotismo y soberanía nacional.
         <br><br>
         Es reconocido como Padre de la Patria junto a Sánchez y Mella,
-        y su pensamiento continúa siendo símbolo de integridad, patriotismo
-        y compromiso con la soberanía nacional.
-        <br><br>
-        Su legado trasciende el tiempo, representando el ideal de una nación
-        libre, justa y basada en principios democráticos.
+        representando el ideal de una nación libre y democrática.
         </p>
     </div>
 </section>
